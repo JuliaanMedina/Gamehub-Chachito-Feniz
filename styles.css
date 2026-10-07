@@ -1,0 +1,20 @@
+/* 1. Reset Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Estilos Globales del Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-Serif;
+    background-color: #0f172a; /* Azul Oscuro Tipo Gaming */
+    color: #f8fafc; /* Texto Claro */
+    line-height: 1.6;
+}
+
+/* 3. Estilos Basicos de Enlaces */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
