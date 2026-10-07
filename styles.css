@@ -18,3 +18,32 @@ a {
     color: #38bdf8;
     text-decoration: none;
 }
+
+/* 4. Encabezado y Navegación */
+header {
+    background-color: #1e293b; /* Un tono más claro que el de fondo general */
+    padding: 1rem 2 rem;
+    display: flex;
+    justify-content: space-between; /* Separa el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #38bdf8; /* Color Celeste que va a destacar */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;   /* Quita los puntos negros de la lista */
+    gap: 1.5rem;    /* Separa los enlaces entre sí */
+}
+
+nav a {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a: hover {
+    color: #f1f5f9; /* Cambia suavemente el color del raton al pasar por encima */
+}
