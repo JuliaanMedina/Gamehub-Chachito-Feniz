@@ -44,7 +44,7 @@ nav a {
     transition: color 0.3s;
 }
 
-nav a: hover {
+nav a:hover {
     color: #f1f5f9; /* Cambia suavemente el color del raton al pasar por encima */
 }
 
@@ -86,4 +86,63 @@ button:hover {
     background-color: #0284c7;
     color: #ffffff;
     transform: translateY(-2px)
+}
+
+/* 6. Grid de Juegos Populares */
+main section:nth-of-type(2) {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+main section:nth-of-type(2) h2 {
+    font-size: 1.8rem;
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+}
+
+/* Disposición en cuadrícula (Grid) para los juegos */
+main section:nth-of-type(2) .games-container,
+main section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* 7. Tarjetas de juegos (Articles) */
+.game-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.game-card h3 {
+    color: #f8fafc;
+    font-size: 1.2rem;
+}
+
+.game-card span {
+    color: #38bdf8;
+}
+
+.game-card strong {
+    color: #4ade80; /* Precio en verde */
+}
+
+/* 8. Estilos de Tarjetas de Reseñas */
+.review-card {
+    background-color: #1e293b;
+    border-left: 4px solid #38bdf8;
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.review-card h3 {
+    color: #f8fafc;
+    font-size: 1.1rem;
 }
