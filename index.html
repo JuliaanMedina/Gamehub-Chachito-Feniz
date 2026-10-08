@@ -20,6 +20,8 @@
 
     <!-- 2. El Main (Contenido Principal)-->
      <main>
+
+
         <!-- Sección para el juego destacado-->
         <section>
             <h2>Juego del Mes</h2>
@@ -30,41 +32,54 @@
         <!-- Sección para la lista de juegos-->
         <section>
             <h2>Juegos populares</h2>
-            <article class="game-card">
-                <img src="img/elden-ring.webp" alt="Portada de Elden Ring">
-                <h3>Elden Ring</h3>
-                <p>Género: <span>RPG/Acción</span></p>
-                <p>Puntuación: 4.9/5.0</p>
-                <p>Precio: <strong>$20.000</strong></p>
-                <button type="button">Añadir a la biblioteca</button>
-            </article>
 
-            <article class="game-card">
-                <img src="img/minecraft.jpg" alt="Portada de Minecraft">
-                <h3>Minecraft</h3>
-                <p>Género: <span>Aventura</span></p>
-                <p>Puntuación: 5.0/5.0</p>
-                <p>Precio: <strong>$120.000</strong></p>
-                <button type="button">Añadir a la biblioteca</button>
-            </article>
+            <div class="filter-container">
+                <input type="text" placeholder="Buscar juego..." class="search-input">
+                <select class="filter-select">
+                    <option value="">Todos los géneros</option>
+                    <option value="acción">Acción/RPG</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="deportes">Deportes</option>
+                </select>
+            </div>
 
-            <article class="game-card">
-                <img src="img/gta6.jpg" alt="Portada de GTA VI">
-                <h3>Grand Theft Auto 6</h3>
-                <p>Género: <span>Aventura</span></p>
-                <p>Puntuación: 5.0/5.0</p>
-                <p>Precio: <strong>$420.000</strong></p>
-                <button type="button">Añadir a la biblioteca</button>
-            </article>
+            <div class="games-container">
+                <article class="game-card">
+                    <img src="img/elden-ring.webp" alt="Portada de Elden Ring">
+                    <h3>Elden Ring</h3>
+                    <p>Género: <span>RPG/Acción</span></p>
+                    <p>Puntuación: 4.9/5.0</p>
+                    <p>Precio: <strong>$20.000</strong></p>
+                    <button type="button">Añadir a la biblioteca</button>
+                </article>
 
-            <article class="game-card">
-                <img src="img/fifa27.jpg" alt="Portada de FIFA 2027">
-                <h3>FIFA 2027</h3>
-                <p>Género: <span>Deportes</span></p>
-                <p>Puntuación: 4.5/5.0</p>
-                <p>Precio: <strong>$820.000</strong></p>
-                <button type="button">Añadir a la biblioteca</button>
-            </article>
+                <article class="game-card">
+                    <img src="img/minecraft.jpg" alt="Portada de Minecraft">
+                    <h3>Minecraft</h3>
+                    <p>Género: <span>Aventura</span></p>
+                    <p>Puntuación: 5.0/5.0</p>
+                    <p>Precio: <strong>$120.000</strong></p>
+                    <button type="button">Añadir a la biblioteca</button>
+                </article>
+
+                <article class="game-card">
+                    <img src="img/gta6.jpg" alt="Portada de GTA VI">
+                    <h3>Grand Theft Auto 6</h3>
+                    <p>Género: <span>Aventura</span></p>
+                    <p>Puntuación: 5.0/5.0</p>
+                    <p>Precio: <strong>$420.000</strong></p>
+                    <button type="button">Añadir a la biblioteca</button>
+                </article>
+
+                <article class="game-card">
+                    <img src="img/fifa27.jpg" alt="Portada de FIFA 2027">
+                    <h3>FIFA 2027</h3>
+                    <p>Género: <span>Deportes</span></p>
+                    <p>Puntuación: 4.5/5.0</p>
+                    <p>Precio: <strong>$820.000</strong></p>
+                    <button type="button">Añadir a la biblioteca</button>
+                </article>
+            </div>
         </section>
 
         <section>

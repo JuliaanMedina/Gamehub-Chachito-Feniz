@@ -101,8 +101,7 @@ main section:nth-of-type(2) h2 {
 }
 
 /* Disposición en cuadrícula (Grid) para los juegos */
-main section:nth-of-type(2) .games-container,
-main section:nth-of-type(2) {
+.games-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1.5rem;
@@ -154,4 +153,29 @@ main section:nth-of-type(2) {
     object-fit: cover;
     border-radius: 6px;
     background-color: #0f172a; /* Fondo oscuro mientras carga la imagen */
+}
+
+/* 10. Estilos de Filtros y Busqueda */
+.filter-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0; /* Se cambia a 0 para alinearlo con el h2 */
+ }
+
+.search-input, .filter-select {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: #f9fafc;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.search-input {
+    flex: 1;
+}
+
+.filter-select {
+    cursor: pointer;
 }
