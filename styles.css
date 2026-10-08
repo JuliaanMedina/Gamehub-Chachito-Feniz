@@ -146,3 +146,12 @@ main section:nth-of-type(2) {
     color: #f8fafc;
     font-size: 1.1rem;
 }
+
+/* 9. Estilos de las Portadas de Juegos */
+.game-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: #0f172a; /* Fondo oscuro mientras carga la imagen */
+}
