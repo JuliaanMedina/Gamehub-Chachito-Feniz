@@ -22,7 +22,7 @@ a {
 /* 4. Encabezado y Navegación */
 header {
     background-color: #1e293b; /* Un tono más claro que el de fondo general */
-    padding: 1rem 2 rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between; /* Separa el logo a la izquierda y el menú a la derecha */
     align-items: center;
@@ -197,7 +197,7 @@ main section:nth-of-type(2) h2 {
 /* 11. Estilos del Formulario de registro */
 .contact-section {
     padding: 0 2rem;
-    margin-bottom: 3 rem;
+    margin-bottom: 3rem;
 }
 
 .contact-section h2 {
@@ -213,7 +213,7 @@ main section:nth-of-type(2) h2 {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.2 rem;
+    gap: 1.2rem;
     max-width: 600px;
 }
 
@@ -313,41 +313,12 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Scroll bar personalizada */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #0f172a;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #1e293b;
-    border-radius: 5px;
-    border: 2px solid #0f172a;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #38bdf8;
-}
-
 /*  ===========================================================
         13. Diseño Responsivo (Media Queries)
     =========================================================== */
 
 /* Móviles (Pantallas de hasta 768px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    main section:first-of-type { /* Reduce los margenes laterales del banner para ganar espacio */
-        margin: 1rem;
-        padding: 1.5rem 1rem;
-    }
-    
-    main section:nth-of-type(2),
-    .contact-section {
-        padding: 0 1rem;
-    }
-
+@media (min-width: 768px) {
     header {
         flex-direction: column;
         gap: 0.8rem;
@@ -380,6 +351,13 @@ html {
     .contact-form { /* Asegura que el formulario ocupe todo el ancho disponible */
         padding: 1.2rem;
         max-width: 100%;
+    }
+}
+
+/* Tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .games-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
