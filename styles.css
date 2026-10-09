@@ -294,3 +294,48 @@ footer {
     color: #64748b;
     font-size: 0.85rem;
 }
+
+/*  ===========================================================
+        13. Diseño Responsivo (Media Queries)
+    =========================================================== */
+
+/* Móviles (Pantallas de hasta 768px) */
+@media (max-width: 768px) {
+    main section:first-of-type { /* Reduce los margenes laterales del banner para ganar espacio */
+        margin: 1rem;
+        padding: 1.5rem 1rem;
+    }
+    
+    main section:nth-of-type(2),
+    .contact-section {
+        padding: 0 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 1rem; /* Agrega espacio interno para que no se mueva */
+        text-align: center;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .search-input,
+    .filter-select {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-form { /* Asegura que el formulario ocupe todo el ancho disponible */
+        padding: 1.2rem;
+        max-width: 100%;
+    }
+}
