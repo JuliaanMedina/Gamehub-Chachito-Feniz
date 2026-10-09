@@ -88,6 +88,14 @@ button:hover {
     transform: translateY(-2px)
 }
 
+button, .btn {
+    transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+button:active, .btn:active {
+    transform: scale(0.97);
+}
+
 /* 6. Grid de Juegos Populares */
 main section:nth-of-type(2) {
     padding: 0 2rem;
@@ -117,6 +125,7 @@ main section:nth-of-type(2) h2 {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .game-card h3 {
@@ -130,6 +139,11 @@ main section:nth-of-type(2) h2 {
 
 .game-card strong {
     color: #4ade80; /* Precio en verde */
+}
+
+.game-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
 }
 
 /* 8. Estilos de Tarjetas de Reseñas */
@@ -295,12 +309,16 @@ footer {
     font-size: 0.85rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*  ===========================================================
         13. Diseño Responsivo (Media Queries)
     =========================================================== */
 
 /* Móviles (Pantallas de hasta 768px) */
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     main section:first-of-type { /* Reduce los margenes laterales del banner para ganar espacio */
         margin: 1rem;
         padding: 1.5rem 1rem;
@@ -318,6 +336,11 @@ footer {
         text-align: center;
     }
 
+    .games-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
     .filter-container {
         flex-direction: column;
         gap: 0.8rem;
@@ -332,6 +355,7 @@ footer {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        justify-content: space-around;
     }
 
     .contact-form { /* Asegura que el formulario ocupe todo el ancho disponible */
