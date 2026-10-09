@@ -313,6 +313,25 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Scroll bar personalizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 5px;
+    border: 2px solid #0f172a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+}
+
 /*  ===========================================================
         13. Diseño Responsivo (Media Queries)
     =========================================================== */
@@ -363,3 +382,4 @@ html {
         max-width: 100%;
     }
 }
+

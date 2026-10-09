@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamehub Chanchito Feniz</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/686/686589.png"
 </head>
 <body>
     <!-- 1. La barra superior (Header)-->
@@ -34,8 +35,8 @@
             <h2>Juegos populares</h2>
 
             <div class="filter-container">
-                <input type="text" placeholder="Buscar juego..." class="search-input">
-                <select class="filter-select">
+                <input type="text" placeholder="Buscar juego..." class="search-input" aria-label="Buscar videojuegos por título">
+                <select class="filter-select" aria-label="Filtrar videojuegos por genero">
                     <option value="">Todos los géneros</option>
                     <option value="acción">Acción/RPG</option>
                     <option value="aventura">Aventura</option>
@@ -109,17 +110,17 @@
             <form class="contact-form">
                 <div class="form-group">
                     <label for="username">Nombre de usuario</label>
-                    <input type="text" id="username" name="username" placeholder="Tu apodo gaming" required>
+                    <input type="text" id="username" name="username" placeholder="Tu apodo gaming" aria-label="Tu apodo gaming" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" aria-label="tu@email.com" required>
                 </div>
 
                 <div class="form-group">
                     <label for="platform">Plataforma preferida</label>
-                    <select id="platform" name="platform">
+                    <select id="platform" name="platform" aria-label="Plataforma preferida">
                         <option value="pc">PC</option>
                         <option value="playstation">Playstation</option>
                         <option value="xbox">Xbox</option>
